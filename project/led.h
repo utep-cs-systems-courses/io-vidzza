@@ -1,8 +1,11 @@
-#ifndef led_included
-#define led_included
-
-#define LED_RED BIT0               // P1.0
-#define LED_GREEN BIT6             // P1.6
+#ifndef LED_INCLUDED
+#define LED_INCLUDED
+#define LED_GREEN BIT6
+#define LED_RED BIT0
 #define LEDS (BIT0 | BIT6)
 
-#endif // included
+void led_init();
+void toggle_green();
+void toggle_red();
+
+#endif // LED_INCLUDED
